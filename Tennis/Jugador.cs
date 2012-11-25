@@ -5,7 +5,7 @@ namespace Tennis
     public class Jugador : IJugador
     {
         public string puntos { get; set; }
-        public Juego game { get; set; }
+        public IJuego game { get; set; }
 
         public Jugador() {
             puntos = "0";
