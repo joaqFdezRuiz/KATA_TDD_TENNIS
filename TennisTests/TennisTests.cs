@@ -5,13 +5,15 @@ namespace TennisTests
 {
     public class TennisTests
     {
-        [TestFixture]
-        public class Player_P1_In_Player_P2_In
-        {
-            IJugador p1 = new Jugador();
-            IJugador p2 = new Jugador();
-            IJuego game;
+        public class creaVariables {
+            protected IJugador p1 = new Jugador();
+            protected IJugador p2 = new Jugador();
+            protected IJuego game;
+        }
 
+        [TestFixture]
+        public class Player_P1_In_Player_P2_In : creaVariables
+        {
             [SetUp]
             public void Setup()
             {
@@ -27,12 +29,8 @@ namespace TennisTests
         }
 
         [TestFixture]
-        public class Player_P1_15_Player_P2_0
+        public class Player_P1_15_Player_P2_0 : creaVariables
         {
-            IJugador p1 = new Jugador();
-            IJugador p2 = new Jugador();
-            IJuego game;
-
             [SetUp]
             public void Setup()
             {
@@ -49,12 +47,8 @@ namespace TennisTests
         }
 
         [TestFixture]
-        public class Player_P1_30_Player_P2_0
+        public class Player_P1_30_Player_P2_0 : creaVariables
         {
-            IJugador p1 = new Jugador();
-            IJugador p2 = new Jugador();
-            IJuego game;
-
             [SetUp]
             public void Setup()
             {
@@ -71,12 +65,8 @@ namespace TennisTests
             }
         }
 
-        public class Player_P1_40_Player_P2_0
+        public class Player_P1_40_Player_P2_0 : creaVariables
         {
-            IJugador p1 = new Jugador();
-            IJugador p2 = new Jugador();
-            IJuego game;
-
             [SetUp]
             public void Setup()
             {
@@ -94,12 +84,8 @@ namespace TennisTests
             }
         }
 
-        public class Player_P1_Gana
+        public class Player_P1_Gana : creaVariables
         {
-            IJugador p1 = new Jugador();
-            IJugador p2 = new Jugador();
-            IJuego game;
-
             [SetUp]
             public void Setup()
             {
@@ -117,12 +103,8 @@ namespace TennisTests
             }
         }
 
-        public class Player_P2_Gana
+        public class Player_P2_Gana : creaVariables
         {
-            IJugador p1 = new Jugador();
-            IJugador p2 = new Jugador();
-            IJuego game;
-
             [SetUp]
             public void Setup()
             {
@@ -140,12 +122,8 @@ namespace TennisTests
             }
         }
 
-        public class P1_P2_Iguales
+        public class P1_P2_Iguales : creaVariables
         {
-            IJugador p1 = new Jugador();
-            IJugador p2 = new Jugador();
-            IJuego game;
-
             [SetUp]
             public void Setup()
             {
@@ -166,12 +144,8 @@ namespace TennisTests
             }
         }
 
-        public class P1_VENTAJA
+        public class P1_VENTAJA : creaVariables
         {
-            IJugador p1 = new Jugador();
-            IJugador p2 = new Jugador();
-            IJuego game;
-
             [SetUp]
             public void Setup()
             {
@@ -193,12 +167,8 @@ namespace TennisTests
             }
         }
 
-        public class P2_GANA_TRAS_VENTAJA
+        public class P2_GANA_TRAS_VENTAJA : creaVariables
         {
-            IJugador p1 = new Jugador();
-            IJugador p2 = new Jugador();
-            IJuego game;
-
             [SetUp]
             public void Setup()
             {
@@ -220,6 +190,4 @@ namespace TennisTests
             }
         }
     }
-
-   
 }
